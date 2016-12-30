@@ -64,7 +64,8 @@ var updatePage = (function () {
 
   function getWeather (arr, cb) {
     var city = arr[2];
-    var url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + arr[0] + '&lon=' + arr[1] + '&units=metric&APPID=15c95184dce44b01f71ad740886687f1'/* + apiid*/;
+    var url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + arr[0] + '&lon=' + arr[1] + '&units=metric&APPID=' + apiid;
+    console.log(url);
     makeRequest(url, function(err, res) {
       if (err) console.log(err);
       var response = JSON.parse(res);
