@@ -1,0 +1,22 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "weather cats for fun",
+  "main": "js/app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilyb7/weather-cat.git"
+  },
+  "author": "emily",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilyb7/weather-cat/issues"
+  },
+  "homepage": "https://github.com/emilyb7/weather-cat#readme"
+}
