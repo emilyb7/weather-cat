@@ -13,8 +13,7 @@ var updatePage = (function () {
   }
 
   function isDaylight (sunrise, sunset) {
-    var t = Math.floor(Date.now());
-    console.log(t > sunrise && t < sunset;);
+    var t = (Math.floor(Date.now())) / 1000;
     return t > sunrise && t < sunset;
   }
 
@@ -97,13 +96,11 @@ var updatePage = (function () {
 
   function getBackgroundColor (obj, cb) {
     obj.colors = {};
-    console.log(obj.colors);
     obj.colors.topColor = helpers.rgbcolor(getColor(obj.details.temp));
     var cloudCover = obj.details.cloudCover;
     var sunrise = obj.details.sunrise;
     var sunset = obj.details.sunset;
     obj.colors.bottomoColor = isDaylight(sunrise, sunset) ? "RGBA(15,255,255,1)" : "RGBA(51,2,102,1)";
-    console.log(obj.colors);
     return cb(null, obj);
   }
 
